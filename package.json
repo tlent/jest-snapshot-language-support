@@ -2,10 +2,12 @@
   "name": "jest-snapshot-language-support",
   "displayName": "Jest Snapshot Language Support",
   "description": "Syntax highlighting for Jest Snapshots",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "publisher": "tlent",
   "engines": {
     "vscode": "^1.29.0"
   },
+  "license": "MIT",
   "categories": [
     "Programming Languages"
   ],
