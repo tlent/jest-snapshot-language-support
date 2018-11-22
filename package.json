@@ -34,5 +34,13 @@
         "path": "./syntaxes/jest-snapshot.tmLanguage"
       }
     ]
+  },
+  "homepage": "https://github.com/tlent/jest-snapshot-language-support",
+  "bugs": {
+    "url": "https://github.com/tlent/jest-snapshot-language-support/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tlent/jest-snapshot-language-support.git"
   }
 }
