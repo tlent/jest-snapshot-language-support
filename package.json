@@ -1,0 +1,36 @@
+{
+  "name": "jest-snapshot-language-support",
+  "displayName": "Jest Snapshot Language Support",
+  "description": "Syntax highlighting for Jest Snapshots",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.29.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "jest-snapshot",
+        "aliases": [
+          "Jest Snapshot",
+          "jest-snapshot"
+        ],
+        "extensions": [
+          ".js.snap",
+          ".jsx.snap",
+          ".ts.snap",
+          ".tsx.snap"
+        ]
+      }
+    ],
+    "grammars": [
+      {
+        "language": "jest-snapshot",
+        "scopeName": "source.jest.snap",
+        "path": "./syntaxes/jest-snapshot.tmLanguage"
+      }
+    ]
+  }
+}
