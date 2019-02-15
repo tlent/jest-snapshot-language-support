@@ -4,20 +4,26 @@
   "injectionSelector": "L:source -comment -string",
   "patterns": [
     {
-      "contentName": "meta.embedded.inline.snap",
-      "begin": "\\.to(?:Match|ThrowErrorMatching)InlineSnapshot\\((`)",
-      "beginCaptures": {
-        "1": {
-          "name": "punctuation.definition.quasi.begin.js"
+      "begin": "\\.to(?:Match|ThrowErrorMatching)InlineSnapshot\\(",
+      "end": "\\)",
+      "patterns": [
+        {
+          "contentName": "meta.embedded.inline.snap",
+          "begin": "(`)",
+          "end": "(`)",
+          "beginCaptures": {
+            "1": {
+              "name": "punctuation.definition.quasi.begin.js"
+            }
+          },
+          "endCaptures": {
+            "1": {
+              "name": "punctuation.definition.quasi.begin.js"
+            }
+          },
+          "patterns": [{ "include": "source.jest.snap" }]
         }
-      },
-      "end": "(`)\\)",
-      "endCaptures": {
-        "1": {
-          "name": "punctuation.definition.quasi.begin.js"
-        }
-      },
-      "patterns": [{ "include": "source.jest.snap" }]
+      ]
     }
   ]
 }
